@@ -1,0 +1,48 @@
+# Desarrollo Web Avanzado con Node.js
+
+- Node.js
+    - Versionado e instalación
+        - LTS
+        - Current
+        - Versiones específicas
+        - nvm
+    - Funcionamiento con archivos javascript
+        - Ejecutar script mostrando mensaje en consola
+        - Objeto process
+        - Argumentos
+        - Paquetes propios
+            - fs
+            - net
+            - http
+- NPM
+    - Inicializar proyecto
+        - Archivo package.json
+        - Directorio node_modules
+    - Paquetes de terceros
+        - Instalar paquete colorette
+        - Instalar express
+    - Paquetes locales
+        - Crear directorio fuera del proyecto e inicializar
+        - Crear paquete con ejecutable (cli) y biblioteca
+        - Instalar paquete local
+            - Usar librería en código
+            - Usar cli en package.json
+    - Tipos de instalación
+        - Producción
+        - Desarrollo
+        - Global
+    - NPX
+- Streams
+    - Writable
+    - Readable
+    - Duplex
+    - Transform
+- Pipes
+- Git
+- Deploy en Heroku con Github
+- TCP
+- Http
+- Express
+- Sockets.io
+- Redis
+- TypeORM
