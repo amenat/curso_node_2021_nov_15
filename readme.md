@@ -1,20 +1,22 @@
 # Desarrollo Web Avanzado con Node.js
 
-- Node.js
-    - Versionado e instalación
-        - LTS
-        - Current
-        - Versiones específicas
-        - nvm
-    - Funcionamiento con archivos javascript
-        - Ejecutar script mostrando mensaje en consola
-        - Objeto process
-        - Argumentos
-        - Paquetes propios
-            - fs
-            - net
-            - http
-- NPM
+1. Introducción a Node.js
+    - Instalación y nvm
+        - [Versiones](https://nodejs.org/es/about/releases/)
+        - [repositorio de nvm para windows](https://github.com/coreybutler/nvm-windows)
+        - Descargar release actual (1.1.8)
+        - Instalar node lts (16.13.0)
+    - Usando Node.js
+        1. Ejecutar script básico
+2. Características de Node.js y diferencias entre código bloqueante y no bloqueante
+    1. __filename
+    2. __dirname
+    3. process.env
+    4. process.argv
+    5. ejemplo de código bloqueante
+    6. ejemplo de código no bloqueante
+3. Retos a resolver mediante esta tecnología
+4. Exportación, instalación de NPM, dependencias, y versiones semánticas
     - Inicializar proyecto
         - Archivo package.json
         - Directorio node_modules
@@ -32,17 +34,13 @@
         - Desarrollo
         - Global
     - NPX
-- Streams
-    - Writable
-    - Readable
-    - Duplex
-    - Transform
-- Pipes
-- Git
-- Deploy en Heroku con Github
-- TCP
-- Http
-- Express
-- Sockets.io
-- Redis
-- TypeORM
+5. Lectura de archivos y emisión de peticiones
+6. Emisores de eventos, requests, y escuchas
+7. Streams: problemas a resolver
+8. Escritura, lectura, piping y solución de la concurrencia
+9. Rutas, disposición visual, construcción de URL y servidores express
+10. Escucha, emisión, respuesta a peticiones y almacenamiento de datos del cliente
+11. Persistencia de información
+12. Redis, trabajo con listas, persistencia, emisión, y otros aspectos
+13. Trabajo en tiempo real con Node.js
+14. Socket.io: la librería de sockets

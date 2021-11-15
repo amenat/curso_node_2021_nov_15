@@ -1,0 +1,27 @@
+{
+  "name": "curso_node_2021_nov_15",
+  "version": "1.0.0",
+  "description": "1. Introducción a Node.js\r     - Instalación y nvm\r         - [Versiones](https://nodejs.org/es/about/releases/)\r         - [repositorio de nvm para windows](https://github.com/coreybutler/nvm-windows)\r         - Descargar release actual (1.1.8)\r         - Instalar node lts (16.13.0)\r     - \r 2. Características de Node.js y diferencias entre código bloqueante y no bloqueante\r 3. Retos a resolver mediante esta tecnología\r 4. Exportación, instalación de NPM, dependencias, y versiones semánticas.\r 5. Lectura de archivos y emisión de peticiones\r 6. Emisores de eventos, requests, y escuchas\r 7. Streams: problemas a resolver\r 8. Escritura, lectura, piping y solución de la concurrencia\r 9. Rutas, disposición visual, construcción de URL y servidores express\r 10. Escucha, emisión, respuesta a peticiones y almacenamiento de datos del cliente\r 11. Persistencia de información\r 12. Redis, trabajo con listas, persistencia, emisión, y otros aspectos\r 13. Trabajo en tiempo real con Node.js\r 14. Socket.io: la librería de sockets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lemaguilera/curso_node_2021_nov_15.git"
+  },
+  "keywords": [],
+  "author": "Luis Marin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lemaguilera/curso_node_2021_nov_15/issues"
+  },
+  "homepage": "https://github.com/lemaguilera/curso_node_2021_nov_15#readme",
+  "devDependencies": {
+    "@types/node": "^16.11.7"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "type": "module"
+}
