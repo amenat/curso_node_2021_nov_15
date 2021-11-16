@@ -1,0 +1,29 @@
+{
+  "name": "curso_node_2021_nov_15",
+  "version": "1.0.0",
+  "description": "1. Introducción a Node.js\r     - Instalación y nvm\r         - [Versiones](https://nodejs.org/es/about/releases/)\r         - [repositorio de nvm para windows](https://github.com/coreybutler/nvm-windows)\r         - Descargar release actual (1.1.8)\r         - Instalar node lts (16.13.0)\r     - Usando Node.js\r         1. Ejecutar script básico\r 2. Características de Node.js y diferencias entre código bloqueante y no bloqueante\r     1. __filename\r     2. __dirname\r     3. process.env\r     4. process.argv\r     5. ejemplo de código bloqueante\r     6. ejemplo de código no bloqueante\r 3. Retos a resolver mediante esta tecnología\r 4. Exportación, instalación de NPM, dependencias, y versiones semánticas\r     - Inicializar proyecto\r         - Archivo package.json\r         - Directorio node_modules\r     - Paquetes de terceros\r         - Instalar paquete colorette\r         - Instalar express\r     - Paquetes locales\r         - Crear directorio fuera del proyecto e inicializar\r         - Crear paquete con ejecutable (cli) y biblioteca\r         - Instalar paquete local\r             - Usar librería en código\r             - Usar cli en package.json\r     - Tipos de instalación\r         - Producción\r         - Desarrollo\r         - Global\r     - NPX\r 5. Lectura de archivos y emisión de peticiones\r 6. Emisores de eventos, requests, y escuchas\r 7. Streams: problemas a resolver\r 8. Escritura, lectura, piping y solución de la concurrencia\r 9. Rutas, disposición visual, construcción de URL y servidores express\r 10. Escucha, emisión, respuesta a peticiones y almacenamiento de datos del cliente\r 11. Persistencia de información\r 12. Redis, trabajo con listas, persistencia, emisión, y otros aspectos\r 13. Trabajo en tiempo real con Node.js\r 14. Socket.io: la librería de sockets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lemaguilera/curso_node_2021_nov_15.git"
+  },
+  "keywords": [],
+  "author": "Luis Marin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lemaguilera/curso_node_2021_nov_15/issues"
+  },
+  "homepage": "https://github.com/lemaguilera/curso_node_2021_nov_15#readme",
+  "dependencies": {
+    "colorette": "^2.0.16",
+    "commander": "^8.3.0",
+    "cursosuma": "file:../cursosuma"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^16.11.7"
+  }
+}
