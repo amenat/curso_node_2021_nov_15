@@ -1,0 +1,10 @@
+{"variable1":"valor1"}
+{}
+{"variable1":"valor1"}
+{}
+{"variable1":"valor1"}
+{}
+{"variable1":"valor1"}
+{"variable1":"valor1"}
+{"variable1":"valor1"}
+{"variable1":"valor1","var2":"val2"}
