@@ -1,8 +1,6 @@
-node_modules
-dist
-seccion_02/file.txt
-seccion_07/1_Puesta_en_marcha_entorno_desarrollo_Onesait.mp4
-
-
-
-
+.idea/
+.vscode/
+node_modules/
+build/
+tmp/
+temp/
