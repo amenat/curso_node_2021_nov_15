@@ -30,9 +30,9 @@ class Server {
         }, 1e3);
     }
 
-    emitUsers() {
-        this.io.emit("users", this.users);
-    }
+    // emitUsers() {
+    //     this.io.emit("users", this.users);
+    // }
 
     listen() {
         this.server.listen(this.port, () => {

@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const userList = document.querySelector(".users");
     const me = document.querySelector("#me");
     const username = document.querySelector("#usuario");
+    
     const user = {
         id: "",
         name: ""
@@ -90,7 +91,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     socket.on("users", (users) => {
         userList.innerHTML = "";
         for (const user of users) {
-            agregarUsuario(user);
+            agregarUsuario(user.name);
         }
     });
 
@@ -100,7 +101,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
         const payload = {
             message: message.value,
-            selectedUsers
+            selectedUsers: selectedUsers.map({
+                
+            })
         };
 
 
