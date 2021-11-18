@@ -3,7 +3,18 @@ const redis = require("redis");
 const { join } = require("path");
 
 
-const client = redis.createClient();
+const client = redis.createClient({
+    url: "//" + process.env.REDIS_URL
+});
+
+client.auth(process.env.REDIS_PASS, (err, reply) => {
+    if(err) {
+        console.log(err);
+        return;
+    }
+    console.log({reply});
+})
+
 const app = express();
 
 app.use(express.json());
