@@ -8,14 +8,22 @@ const app = express();
 
 app.use(express.json());
 
+
+
 app.post("/user", (req, res) => {
     const { name, jobArea } = req.body;
-    client.set(name, JSON.stringify({
+
+    client.set(
         name,
-        jobArea
-    }), () => {
-        res.sendStatus(201);
-    });
+        JSON.stringify({
+            name,
+            jobArea
+        }),
+        () => {
+            res.sendStatus(201);
+        }
+    );
+
 });
 
 app.get("/user", (req, res) => {
@@ -27,7 +35,22 @@ app.get("/user", (req, res) => {
         const users = [];
         for (const name of keys) {
             const value = await redisGet(name);
-            users.push(JSON.parse(value));
+
+
+            console.log({ name, value });
+
+            try {
+                users.push(JSON.parse(value));
+            }
+            catch (_) {
+                users.push({
+                    name,
+                    value
+                });
+            }
+
+
+
         }
         res.json(users);
     });

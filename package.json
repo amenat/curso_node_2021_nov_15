@@ -7,17 +7,9 @@
     "start": "node redis.js",
     "dev": "nodemon redis.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lemaguilera/curso_node_2021_nov_15.git"
-  },
   "keywords": [],
   "author": "Luis Marin",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lemaguilera/curso_node_2021_nov_15/issues"
-  },
-  "homepage": "https://github.com/lemaguilera/curso_node_2021_nov_15#readme",
   "dependencies": {
     "express": "^4.17.1",
     "redis": "^3.1.2"

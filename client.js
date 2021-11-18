@@ -9,15 +9,16 @@ const sendPost = async (url, body) => fetch(url, {
 })
     .then(res => res.json());
 
+const sendDelete = async (url) => fetch(url, {
+    method: "delete",
+})
+    .then(res => res.text());
+
+
+
 redis.addUser = async (user) => {
     sendPost("/user", user);
 };
 
-
-redis.addUser({
-    name: "Juan",
-    jobArea: "IT"
-});
-
-
+redis.getUsers = async () => fetch("/user").then(res => res.json());
 
