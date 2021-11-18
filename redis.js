@@ -53,4 +53,4 @@ app.delete("/user/:name", (req, res) => {
 });
 
 app.use(express.static(join(__dirname)));
-app.listen(8080);
+app.listen(8080, () => console.log("Servidor iniciado en puerto 8080"));
