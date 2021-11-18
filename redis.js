@@ -6,18 +6,7 @@ const { join } = require("path");
 const client = redis.createClient();
 const app = express();
 
-
 app.use(express.json());
-
-const redisGet = async (key) => new Promise((ok, _err) => {
-    client.get(key, (err, value) => {
-        if (err) {
-            _err(err);
-            return;
-        }
-        ok(value);
-    });
-});
 
 app.post("/user", (req, res) => {
     const { name, jobArea } = req.body;
@@ -49,6 +38,16 @@ app.delete("/user/:name", (req, res) => {
     client.del(name, (_err, response) => {
         console.log({ deleted: response });
         res.sendStatus(200);
+    });
+});
+
+const redisGet = async (key) => new Promise((ok, _err) => {
+    client.get(key, (err, value) => {
+        if (err) {
+            _err(err);
+            return;
+        }
+        ok(value);
     });
 });
 
